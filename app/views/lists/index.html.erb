@@ -1,6 +1,30 @@
-<h1>My Movies list</h1>
-<ul>
-  <% @list.each do |movie| %>
-    <li><%= movie.title %></li>
-  <% end %>
-</ul>
+<div class="container">
+  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="">
+        <img src="<i class='fa-sharp fa-regular fa-camera-movie'></i>" />
+  </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">My Lists</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">New List</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+    <div class="container">
+      <h1>My Movies list</h1>
+      <p>Explore movies by genre</p>
+    </div>
+  </div>
+</div>
